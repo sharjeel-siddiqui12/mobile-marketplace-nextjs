@@ -1,6 +1,6 @@
 .pageContainer {
   min-height: 100vh;
-  background: linear-gradient(135deg, #15a0fd, #0d4970);
+  /* background: linear-gradient(135deg, #15a0fd, #0d4970); */
   padding: 2rem 1rem;
   display: flex;
   align-items: center;

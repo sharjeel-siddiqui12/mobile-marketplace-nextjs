@@ -2,7 +2,8 @@ import React from "react";
 import classes from "./page.module.css";
 
 export default function Page() {
-  return (
+    // throw new Error("This page is not implemented yet. Please check back later.");
+    return (
     <div className={classes.pageContainer}>
       <div className={classes.contentWrapper}>
         <div className={classes.card}>
