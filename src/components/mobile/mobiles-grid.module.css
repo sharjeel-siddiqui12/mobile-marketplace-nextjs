@@ -1,0 +1,32 @@
+.meals {
+  width: 92%;
+  max-width: 90rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+  gap: 2.5rem;
+  margin: 3rem auto;
+  list-style: none;
+  padding: 0;
+  transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .meals {
+    width: 95%;
+    gap: 1.5rem;
+    margin: 2rem auto;
+  }
+}
+
+/* Assuming you have meal items with a class like .meal-item */
+.meals > li {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.meals > li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}

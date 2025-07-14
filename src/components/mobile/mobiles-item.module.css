@@ -1,0 +1,101 @@
+.meal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  color: #f0ebe2;
+  background: linear-gradient(135deg, #1e2c2c 0%, #182731 100%);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.meal:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.headerText {
+  padding: 1rem 1.5rem 0.5rem;
+
+}
+
+.headerText h2 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.headerText p {
+  
+  font-size: 0.85rem;
+  color: #89c6e6;
+  font-style: italic;
+  margin-top: 0.25rem;
+}
+
+.meal h2,
+.meal p {
+  margin: 0;
+}
+
+.image {
+  position: relative;
+  height: 16rem;
+  overflow: hidden;
+}
+
+.meal img {
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.meal:hover img {
+  transform: scale(1.05);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(25, 38, 44, 0) 0%, rgba(25, 38, 44, 0.8) 100%);
+}
+
+.summary {
+  padding: 1.25rem 1.5rem 0;
+  line-height: 1.6;
+}
+
+.actions {
+  padding: 1.25rem 1.5rem;
+  text-align: right;
+}
+
+.actions a {
+  display: inline-block;
+  margin-top: 0.75rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #2a9bf9, #0576ff);
+  color: #ffffff;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.actions a:hover,
+.actions a:active {
+  background: linear-gradient(90deg, #15a0fd, #41aef9);
+  box-shadow: 0 0 15px rgba(5, 155, 255, 0.4);
+  transform: translateY(-2px);
+}
