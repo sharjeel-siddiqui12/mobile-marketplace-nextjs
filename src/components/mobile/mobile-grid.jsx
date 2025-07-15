@@ -14,7 +14,7 @@ export default function MobileGrid({ mobile }) {
 
   return (
     <>
-      <ul className={classes.meals}>
+      <ul className={classes.mobiles}>
         {mobile.map((mobile) => (
           <li key={mobile.id}>
             <MobileItem {...mobile} />
