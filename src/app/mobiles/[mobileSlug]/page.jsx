@@ -5,13 +5,14 @@ import { getMobile } from "@/lib/mobiles";
 import { notFound } from "next/navigation";
 
 export default async function mobileDetailPage({ params }) {
-    const mobile = getMobile(params.mobileSlug)
+    const { mobileSlug } = await params; // Await params
+    const mobile = getMobile(mobileSlug);
 
-    if(!mobile){
+    if (!mobile) {
         notFound();
     }
 
-    mobile.specifications = mobile.specifications.replace(/\n/g , '<br />');
+    mobile.specifications = mobile.specifications.replace(/\n/g, '<br />');
 
   return (
     <>

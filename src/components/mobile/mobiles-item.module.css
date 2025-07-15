@@ -1,8 +1,7 @@
-.meal {
+.mobile {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex-wrap: wrap;
   height: 100%;
   border-radius: 8px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
@@ -13,49 +12,52 @@
   border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
-.meal:hover {
+.mobile:hover {
   transform: translateY(-4px);
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 .headerText {
   padding: 1rem 1.5rem 0.5rem;
-
 }
 
 .headerText h2 {
   margin: 0;
   font-size: 1.6rem;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 600;
   letter-spacing: -0.5px;
+  word-break: break-word; /* Added */
+  white-space: normal; /* Added */
 }
 
 .headerText p {
-  
   font-size: 0.85rem;
   color: #89c6e6;
   font-style: italic;
   margin-top: 0.25rem;
 }
 
-.meal h2,
-.meal p {
+.mobile h2,
+.mobile p {
   margin: 0;
 }
 
 .image {
   position: relative;
-  height: 16rem;
+  height: 20rem;         /* Adjust height as needed */
   overflow: hidden;
+  background: #222;      /* Optional: adds a background for images with transparency */
 }
 
-.meal img {
-  object-fit: cover;
+.mobile img {
+  object-fit: contain;   /* Show the full image */
+  width: 100%;
+  height: 100%;
   transition: transform 0.5s ease;
 }
 
-.meal:hover img {
+.mobile:hover img {
   transform: scale(1.05);
 }
 
@@ -63,14 +65,19 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  
   height: 100%;
-  background: linear-gradient(to bottom, rgba(25, 38, 44, 0) 0%, rgba(25, 38, 44, 0.8) 100%);
+  background: linear-gradient(
+    to bottom,
+    rgba(25, 38, 44, 0) 0%,
+    rgba(25, 38, 44, 0.8) 100%
+  );
 }
 
 .summary {
-  padding: 1.25rem 1.5rem 0;
+   padding: 1.25rem 1.5rem 0;
   line-height: 1.6;
+  word-break: break-word;      /* Added */
+  white-space: normal;         /* Added */
 }
 
 .actions {
