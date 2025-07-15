@@ -18,7 +18,7 @@
   }
 }
 
-/* Assuming you have meal items with a class like .meal-item */
+/* Assuming you have mobile items with a class like .mobile-item */
 .mobiles > li {
   border-radius: 12px;
   overflow: hidden;

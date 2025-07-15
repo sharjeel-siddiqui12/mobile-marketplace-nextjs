@@ -1,6 +1,6 @@
 import Image from 'next/image';
 
-import mealIcon from '@/assets/icons/app-development.png';
+import mobileIcon from '@/assets/icons/app-development.png';
 import communityIcon from '@/assets/icons/smartphone.png';
 import eventsIcon from '@/assets/icons/text.png';
 import classes from './page.module.css';
@@ -19,7 +19,7 @@ export default function CommunityPage() {
 
         <ul className={classes.perks}>
           <li>
-            <Image src={mealIcon} alt="A delicious meal" />
+            <Image src={mobileIcon} alt="mobile icon" />
             <p>Share & discover mobile apps</p>
           </li>
           <li>

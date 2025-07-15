@@ -19,10 +19,10 @@ export function getMobile(slug) {
 }
 
 export async function saveMobile(mobile) {
-  // const { title, summary, specifications, image, creator, creator_email } = meal;
+  // const { title, summary, specifications, image, creator, creator_email } = mobile;
 
   // const result = db.prepare(
-  //     'INSERT INTO meals (title, summary, specifications, image, creator, creator_email) VALUES (?, ?, ?, ?, ?, ?)'
+  //     'INSERT INTO mobiles (title, summary, specifications, image, creator, creator_email) VALUES (?, ?, ?, ?, ?, ?)'
   // ).run(title, summary, specifications, image, creator, creator_email);
 
   // return result.changes > 0;
@@ -44,15 +44,15 @@ export async function saveMobile(mobile) {
   mobile.image = `/images/${fileName}`;
 
   //   db.prepare(
-  //     "INSERT INTO meals (title, summary, specifications, image, creator, creator_email, slug) VALUES (?, ?, ?, ?, ?, ?, ?)"
+  //     "INSERT INTO mobiles (title, summary, specifications, image, creator, creator_email, slug) VALUES (?, ?, ?, ?, ?, ?, ?)"
   //   ).run(
-  //     meal.title,
-  //     meal.summary,
-  //     meal.specifications,
-  //     meal.image,
-  //     meal.creator,
-  //     meal.creator_email,
-  //     meal.slug
+  //     mobile.title,
+  //     mobile.summary,
+  //     mobile.specifications,
+  //     mobile.image,
+  //     mobile.creator,
+  //     mobile.creator_email,
+  //     mobile.slug
   //   );
   //   return true;
 
