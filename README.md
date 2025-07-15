@@ -1,4 +1,4 @@
-# Mobile Showcase Web Application
+# Mobile Marketplace Web Application
 
 A full-stack, modern web app built with **Next.js 15** and **React 19** for browsing, sharing, and viewing detailed information about mobile phones. The project features a responsive UI, image upload, SQLite database integration, and community engagement.
 
